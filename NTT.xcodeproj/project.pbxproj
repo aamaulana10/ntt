@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		043154B727DB23870011AD6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043154B627DB23870011AD6D /* AppDelegate.swift */; };
+		043154B927DB23870011AD6D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043154B827DB23870011AD6D /* SceneDelegate.swift */; };
+		043154BB27DB23870011AD6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043154BA27DB23870011AD6D /* ViewController.swift */; };
+		043154BE27DB23870011AD6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043154BC27DB23870011AD6D /* Main.storyboard */; };
+		043154C027DB23880011AD6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 043154BF27DB23880011AD6D /* Assets.xcassets */; };
+		043154C327DB23880011AD6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043154C127DB23880011AD6D /* LaunchScreen.storyboard */; };
+		043154CE27DB23880011AD6D /* NTTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043154CD27DB23880011AD6D /* NTTTests.swift */; };
+		043154D927DB23880011AD6D /* NTTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043154D827DB23880011AD6D /* NTTUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		043154CA27DB23880011AD6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 043154AB27DB23870011AD6D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 043154B227DB23870011AD6D;
+			remoteInfo = NTT;
+		};
+		043154D527DB23880011AD6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 043154AB27DB23870011AD6D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 043154B227DB23870011AD6D;
+			remoteInfo = NTT;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		043154B327DB23870011AD6D /* NTT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NTT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		043154B627DB23870011AD6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		043154B827DB23870011AD6D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		043154BA27DB23870011AD6D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		043154BD27DB23870011AD6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		043154BF27DB23880011AD6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		043154C227DB23880011AD6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		043154C427DB23880011AD6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		043154C927DB23880011AD6D /* NTTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NTTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		043154CD27DB23880011AD6D /* NTTTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTTTests.swift; sourceTree = "<group>"; };
+		043154CF27DB23880011AD6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		043154D427DB23880011AD6D /* NTTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NTTUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		043154D827DB23880011AD6D /* NTTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTTUITests.swift; sourceTree = "<group>"; };
+		043154DA27DB23880011AD6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		043154B027DB23870011AD6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		043154C627DB23880011AD6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		043154D127DB23880011AD6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		043154AA27DB23870011AD6D = {
+			isa = PBXGroup;
+			children = (
+				043154B527DB23870011AD6D /* NTT */,
+				043154CC27DB23880011AD6D /* NTTTests */,
+				043154D727DB23880011AD6D /* NTTUITests */,
+				043154B427DB23870011AD6D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		043154B427DB23870011AD6D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				043154B327DB23870011AD6D /* NTT.app */,
+				043154C927DB23880011AD6D /* NTTTests.xctest */,
+				043154D427DB23880011AD6D /* NTTUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		043154B527DB23870011AD6D /* NTT */ = {
+			isa = PBXGroup;
+			children = (
+				043154B627DB23870011AD6D /* AppDelegate.swift */,
+				043154B827DB23870011AD6D /* SceneDelegate.swift */,
+				043154BA27DB23870011AD6D /* ViewController.swift */,
+				043154BC27DB23870011AD6D /* Main.storyboard */,
+				043154BF27DB23880011AD6D /* Assets.xcassets */,
+				043154C127DB23880011AD6D /* LaunchScreen.storyboard */,
+				043154C427DB23880011AD6D /* Info.plist */,
+			);
+			path = NTT;
+			sourceTree = "<group>";
+		};
+		043154CC27DB23880011AD6D /* NTTTests */ = {
+			isa = PBXGroup;
+			children = (
+				043154CD27DB23880011AD6D /* NTTTests.swift */,
+				043154CF27DB23880011AD6D /* Info.plist */,
+			);
+			path = NTTTests;
+			sourceTree = "<group>";
+		};
+		043154D727DB23880011AD6D /* NTTUITests */ = {
+			isa = PBXGroup;
+			children = (
+				043154D827DB23880011AD6D /* NTTUITests.swift */,
+				043154DA27DB23880011AD6D /* Info.plist */,
+			);
+			path = NTTUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		043154B227DB23870011AD6D /* NTT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 043154DD27DB23880011AD6D /* Build configuration list for PBXNativeTarget "NTT" */;
+			buildPhases = (
+				043154AF27DB23870011AD6D /* Sources */,
+				043154B027DB23870011AD6D /* Frameworks */,
+				043154B127DB23870011AD6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NTT;
+			productName = NTT;
+			productReference = 043154B327DB23870011AD6D /* NTT.app */;
+			productType = "com.apple.product-type.application";
+		};
+		043154C827DB23880011AD6D /* NTTTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 043154E027DB23880011AD6D /* Build configuration list for PBXNativeTarget "NTTTests" */;
+			buildPhases = (
+				043154C527DB23880011AD6D /* Sources */,
+				043154C627DB23880011AD6D /* Frameworks */,
+				043154C727DB23880011AD6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				043154CB27DB23880011AD6D /* PBXTargetDependency */,
+			);
+			name = NTTTests;
+			productName = NTTTests;
+			productReference = 043154C927DB23880011AD6D /* NTTTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		043154D327DB23880011AD6D /* NTTUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 043154E327DB23880011AD6D /* Build configuration list for PBXNativeTarget "NTTUITests" */;
+			buildPhases = (
+				043154D027DB23880011AD6D /* Sources */,
+				043154D127DB23880011AD6D /* Frameworks */,
+				043154D227DB23880011AD6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				043154D627DB23880011AD6D /* PBXTargetDependency */,
+			);
+			name = NTTUITests;
+			productName = NTTUITests;
+			productReference = 043154D427DB23880011AD6D /* NTTUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		043154AB27DB23870011AD6D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					043154B227DB23870011AD6D = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					043154C827DB23880011AD6D = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 043154B227DB23870011AD6D;
+					};
+					043154D327DB23880011AD6D = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 043154B227DB23870011AD6D;
+					};
+				};
+			};
+			buildConfigurationList = 043154AE27DB23870011AD6D /* Build configuration list for PBXProject "NTT" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 043154AA27DB23870011AD6D;
+			productRefGroup = 043154B427DB23870011AD6D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				043154B227DB23870011AD6D /* NTT */,
+				043154C827DB23880011AD6D /* NTTTests */,
+				043154D327DB23880011AD6D /* NTTUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		043154B127DB23870011AD6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				043154C327DB23880011AD6D /* LaunchScreen.storyboard in Resources */,
+				043154C027DB23880011AD6D /* Assets.xcassets in Resources */,
+				043154BE27DB23870011AD6D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		043154C727DB23880011AD6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		043154D227DB23880011AD6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		043154AF27DB23870011AD6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				043154BB27DB23870011AD6D /* ViewController.swift in Sources */,
+				043154B727DB23870011AD6D /* AppDelegate.swift in Sources */,
+				043154B927DB23870011AD6D /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		043154C527DB23880011AD6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				043154CE27DB23880011AD6D /* NTTTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		043154D027DB23880011AD6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				043154D927DB23880011AD6D /* NTTUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		043154CB27DB23880011AD6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 043154B227DB23870011AD6D /* NTT */;
+			targetProxy = 043154CA27DB23880011AD6D /* PBXContainerItemProxy */;
+		};
+		043154D627DB23880011AD6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 043154B227DB23870011AD6D /* NTT */;
+			targetProxy = 043154D527DB23880011AD6D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		043154BC27DB23870011AD6D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				043154BD27DB23870011AD6D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		043154C127DB23880011AD6D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				043154C227DB23880011AD6D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		043154DB27DB23880011AD6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		043154DC27DB23880011AD6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		043154DE27DB23880011AD6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W59APR6U5A;
+				INFOPLIST_FILE = NTT/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aamaulana10.ntt.NTT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		043154DF27DB23880011AD6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W59APR6U5A;
+				INFOPLIST_FILE = NTT/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aamaulana10.ntt.NTT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		043154E127DB23880011AD6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W59APR6U5A;
+				INFOPLIST_FILE = NTTTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aamaulana10.ntt.NTTTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NTT.app/NTT";
+			};
+			name = Debug;
+		};
+		043154E227DB23880011AD6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W59APR6U5A;
+				INFOPLIST_FILE = NTTTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aamaulana10.ntt.NTTTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NTT.app/NTT";
+			};
+			name = Release;
+		};
+		043154E427DB23880011AD6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W59APR6U5A;
+				INFOPLIST_FILE = NTTUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aamaulana10.ntt.NTTUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NTT;
+			};
+			name = Debug;
+		};
+		043154E527DB23880011AD6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W59APR6U5A;
+				INFOPLIST_FILE = NTTUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aamaulana10.ntt.NTTUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NTT;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		043154AE27DB23870011AD6D /* Build configuration list for PBXProject "NTT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				043154DB27DB23880011AD6D /* Debug */,
+				043154DC27DB23880011AD6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		043154DD27DB23880011AD6D /* Build configuration list for PBXNativeTarget "NTT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				043154DE27DB23880011AD6D /* Debug */,
+				043154DF27DB23880011AD6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		043154E027DB23880011AD6D /* Build configuration list for PBXNativeTarget "NTTTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				043154E127DB23880011AD6D /* Debug */,
+				043154E227DB23880011AD6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		043154E327DB23880011AD6D /* Build configuration list for PBXNativeTarget "NTTUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				043154E427DB23880011AD6D /* Debug */,
+				043154E527DB23880011AD6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 043154AB27DB23870011AD6D /* Project object */;
+}
