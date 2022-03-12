@@ -8,21 +8,22 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-
+    
     @IBOutlet weak var homeTableView: UITableView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var homeTitle: UILabel!
-    var offset = 20
+    var offset = 10
     
     let presenter = HomePresenter()
     var postData = [PostModel]()
+    var isLoading = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
- 
+        
         setupView()
         
-        getDataByOffset(offset: offset)
+        getDataByOffset(offset: offset, isLoadMore: false)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -47,22 +48,35 @@ class HomeViewController: UIViewController {
         
     }
     
-    func getDataByOffset(offset: Int) {
+    func getDataByOffset(offset: Int, isLoadMore: Bool) {
+        
+        print("called")
         
         activityIndicator.startAnimating()
         
-        presenter.getPost(offset: offset) { post in
-
-            self.postData = post
+        presenter.getPost(vc: self, offset: offset) { post in
             
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            self.activityIndicator.stopAnimating()
+            
+            if post == self.postData {
                 
-                self.activityIndicator.stopAnimating()
+                AlertHelper.infoMsg(msg: "no fresh data found")
+                
+                return
+                
+            } else {
+                
+                self.postData = post
+            }
+            
+            DispatchQueue.main.async {
+                
+                self.isLoading = false
                 self.homeTableView.reloadData()
             }
         }
     }
-
+    
 }
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
@@ -80,10 +94,6 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         
         cell.setupData(data: data)
         
-//        if indexPath.row == self.postData.count - 1 {
-//            self.loadMore()
-//        }
-        
         return cell
     }
     
@@ -94,15 +104,29 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         presenter.gotoDetail(postData: data)
     }
     
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let offsetY = scrollView.contentOffset.y
+        let contentHeight = scrollView.contentSize.height
+        
+        if (offsetY > contentHeight - scrollView.frame.height){
+            loadMore()
+            
+        }
+    }
+    
+    
     func loadMore() {
         
-        print("is last row")
+        if !self.isLoading {
+            self.isLoading = true
+            
+            offset += 10
+            print(offset)
+            
+            getDataByOffset(offset: offset, isLoadMore: true)
+            
+        }
         
-        offset += 10
-        
-        print(offset)
-        
-        getDataByOffset(offset: offset)
     }
     
     

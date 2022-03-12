@@ -14,6 +14,7 @@ class NavigationManager {
     
     var mainNavigationController:UINavigationController?
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    let prefs = PreferenceManager.instance
     
     func pushToVc(vc: UIViewController) {
         

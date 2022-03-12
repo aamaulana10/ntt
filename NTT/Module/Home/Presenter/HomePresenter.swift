@@ -7,6 +7,7 @@
 
 import Foundation
 import Combine
+import UIKit
 
 class HomePresenter {
     
@@ -15,7 +16,7 @@ class HomePresenter {
     private var cancellables: Set<AnyCancellable> = []
     private let prefs = PreferenceManager.instance
     
-    func getPost(offset: Int, completion: @escaping([PostModel]) -> ()) {
+    func getPost(vc: UIViewController, offset: Int, completion: @escaping([PostModel]) -> ()) {
         
         useCase.getPost().sink { completion in
             
@@ -25,7 +26,7 @@ class HomePresenter {
                 
                 print("on error")
                 print(error)
-                 
+                
             case .finished:
                 
                 print("on finish")
@@ -33,35 +34,31 @@ class HomePresenter {
             
         } receiveValue: { response in
             
-            let postData = Array(response.prefix(offset))
+            var dataPost = [PostModel]()
             
-            var postDataAfterComment = [PostModel]()
-            
-            for var data in postData {
+            if let userId = self.prefs.userData?.id {
                 
-                self.getCommentFromPost(postId: data.id, currentPost: postData) { dataComment in
+                dataPost = response.filter { filterData in
                     
-                    data.comment = dataComment
-                    
-                    postDataAfterComment.append(data)
-                    
-                    print(postDataAfterComment)
-                    
-                    if let userId = self.prefs.userData?.id {
-                        
-                        postDataAfterComment = postDataAfterComment.filter { filterData in
-                            
-                            filterData.userId == userId
-                        }
-                        
-                        completion(postDataAfterComment)
-                    }
-                    
+                    filterData.userId == userId
                 }
+                
             }
             
+            if dataPost.count >= offset {
+                
+                let postData = Array(dataPost.prefix(offset))
+                
+                completion(postData)
+            } else {
+                
+                completion(Array(dataPost.prefix(offset - dataPost.count)))
+                return
+            }
+            
+            
         }.store(in: &cancellables)
-
+        
     }
     
     func getCommentFromPost(postId: Int, currentPost: [PostModel], completion: @escaping([CommentModel]) -> ()) {
@@ -76,7 +73,7 @@ class HomePresenter {
                 
                 print("on error")
                 print(error)
-                 
+                
             case .finished:
                 
                 print("on finish")

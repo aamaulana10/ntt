@@ -44,6 +44,7 @@ class LoginPresenter {
                 
                 AlertHelper.successMsg(msg: "Welcome \(user.username)")
                 
+                self.prefs.isLogin = true
                 self.prefs.userData = user
                 
                 let vc =  MainTabbarController()

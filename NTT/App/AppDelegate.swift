@@ -12,14 +12,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window:UIWindow?
     var mainNavigationController: UINavigationController?
+    let prefs = PreferenceManager.instance
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        let loginVc =  LoginViewController()
-        
-        mainNavigationController = UINavigationController(rootViewController: loginVc)
-        mainNavigationController?.isNavigationBarHidden = true
-        
+        if prefs.isLogin == true {
+            
+            let mainTabbarVc =  MainTabbarController()
+            
+            mainNavigationController = UINavigationController(rootViewController: mainTabbarVc)
+            mainNavigationController?.isNavigationBarHidden = true
+            
+        } else {
+            
+            let loginVc =  LoginViewController()
+            
+            mainNavigationController = UINavigationController(rootViewController: loginVc)
+            mainNavigationController?.isNavigationBarHidden = true
+        }
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.makeKeyAndVisible()

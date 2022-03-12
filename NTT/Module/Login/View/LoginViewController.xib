@@ -13,6 +13,7 @@
             <connections>
                 <outlet property="TFPassword" destination="dtw-tH-QPA" id="Qj2-3h-Dmd"/>
                 <outlet property="TFUsername" destination="00C-gO-9z6" id="QrQ-8m-28y"/>
+                <outlet property="btnLogin" destination="2ab-yP-VYD" id="umX-Ic-rKt"/>
                 <outlet property="view" destination="iN0-l3-epB" id="6yh-6z-nFj"/>
             </connections>
         </placeholder>
@@ -26,9 +27,9 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cAQ-PL-yPs">
-                    <rect key="frame" x="32" y="346" width="350" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NTT Login Page" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cAQ-PL-yPs">
+                    <rect key="frame" x="32" y="338" width="350" height="29"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
