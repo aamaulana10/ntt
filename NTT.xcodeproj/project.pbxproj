@@ -3,18 +3,42 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		043154B727DB23870011AD6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043154B627DB23870011AD6D /* AppDelegate.swift */; };
-		043154B927DB23870011AD6D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043154B827DB23870011AD6D /* SceneDelegate.swift */; };
-		043154BB27DB23870011AD6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043154BA27DB23870011AD6D /* ViewController.swift */; };
-		043154BE27DB23870011AD6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043154BC27DB23870011AD6D /* Main.storyboard */; };
+		043154BB27DB23870011AD6D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043154BA27DB23870011AD6D /* HomeViewController.swift */; };
 		043154C027DB23880011AD6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 043154BF27DB23880011AD6D /* Assets.xcassets */; };
 		043154C327DB23880011AD6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043154C127DB23880011AD6D /* LaunchScreen.storyboard */; };
 		043154CE27DB23880011AD6D /* NTTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043154CD27DB23880011AD6D /* NTTTests.swift */; };
-		043154D927DB23880011AD6D /* NTTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043154D827DB23880011AD6D /* NTTUITests.swift */; };
+		04C0E3DF27DB3E3000A38A5A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C0E3DE27DB3E3000A38A5A /* LoginViewController.swift */; };
+		04C0E3E127DB3E5700A38A5A /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C0E3E027DB3E5700A38A5A /* LoginPresenter.swift */; };
+		04C0E3E327DB3E9F00A38A5A /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C0E3E227DB3E9F00A38A5A /* HomePresenter.swift */; };
+		04C0E3E827DB423800A38A5A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C0E3E727DB423800A38A5A /* ProfileViewController.swift */; };
+		04C0E3EB27DB432600A38A5A /* MainTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C0E3EA27DB432600A38A5A /* MainTabbarController.swift */; };
+		04C0E3EF27DB43D900A38A5A /* NavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C0E3EE27DB43D900A38A5A /* NavigationManager.swift */; };
+		04FF333927DC5D080051358C /* MainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FF333827DC5D080051358C /* MainHelper.swift */; };
+		04FF333B27DC60E40051358C /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04FF333A27DC60E40051358C /* LoginViewController.xib */; };
+		04FF333D27DC635C0051358C /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04FF333C27DC635C0051358C /* ProfileViewController.xib */; };
+		04FF333F27DC63B60051358C /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04FF333E27DC63B60051358C /* HomeViewController.xib */; };
+		04FF334327DC67CF0051358C /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FF334127DC67CF0051358C /* PostCell.swift */; };
+		04FF334427DC67CF0051358C /* PostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04FF334227DC67CF0051358C /* PostCell.xib */; };
+		04FF334727DC73B00051358C /* RemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FF334627DC73B00051358C /* RemoteDataSource.swift */; };
+		04FF334927DC741D0051358C /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FF334827DC741D0051358C /* PostModel.swift */; };
+		04FF334C27DC74E90051358C /* ApiConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FF334B27DC74E90051358C /* ApiConfig.swift */; };
+		04FF334E27DC758E0051358C /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FF334D27DC758E0051358C /* Repository.swift */; };
+		04FF335227DC76400051358C /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FF335127DC76400051358C /* Interactor.swift */; };
+		04FF335427DC769B0051358C /* Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FF335327DC769B0051358C /* Injection.swift */; };
+		04FF335627DC81370051358C /* CommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FF335527DC81370051358C /* CommentModel.swift */; };
+		04FF335B27DC8BB00051358C /* DetailPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FF335927DC8BB00051358C /* DetailPostViewController.swift */; };
+		04FF335C27DC8BB00051358C /* DetailPostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04FF335A27DC8BB00051358C /* DetailPostViewController.xib */; };
+		04FF336027DC8CD30051358C /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FF335E27DC8CD30051358C /* CommentCell.swift */; };
+		04FF336127DC8CD30051358C /* CommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04FF335F27DC8CD30051358C /* CommentCell.xib */; };
+		04FF336727DC91F50051358C /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FF336627DC91F40051358C /* UIView+Ext.swift */; };
+		1ADF30E1AFF584DAD16A6AAE /* Pods_NTTTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE70EC92529D5ABF211207C7 /* Pods_NTTTests.framework */; };
+		A2389B10D0057EC22CC22246 /* Pods_NTT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18CA9E2E874FE8DF24ADBFE /* Pods_NTT.framework */; };
+		E6E33139164545D35CF06CB7 /* Pods_NTT_NTTUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D0E119FA3CEA634F992324E /* Pods_NTT_NTTUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +59,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03DA260309951FECDBE3B6DC /* Pods-NTTTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NTTTests.release.xcconfig"; path = "Target Support Files/Pods-NTTTests/Pods-NTTTests.release.xcconfig"; sourceTree = "<group>"; };
 		043154B327DB23870011AD6D /* NTT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NTT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		043154B627DB23870011AD6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		043154B827DB23870011AD6D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		043154BA27DB23870011AD6D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		043154BD27DB23870011AD6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		043154BA27DB23870011AD6D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		043154BF27DB23880011AD6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		043154C227DB23880011AD6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		043154C427DB23880011AD6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,8 +70,38 @@
 		043154CD27DB23880011AD6D /* NTTTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTTTests.swift; sourceTree = "<group>"; };
 		043154CF27DB23880011AD6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		043154D427DB23880011AD6D /* NTTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NTTUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		043154D827DB23880011AD6D /* NTTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTTUITests.swift; sourceTree = "<group>"; };
-		043154DA27DB23880011AD6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04C0E3DE27DB3E3000A38A5A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		04C0E3E027DB3E5700A38A5A /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		04C0E3E227DB3E9F00A38A5A /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		04C0E3E727DB423800A38A5A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		04C0E3EA27DB432600A38A5A /* MainTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbarController.swift; sourceTree = "<group>"; };
+		04C0E3EE27DB43D900A38A5A /* NavigationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationManager.swift; sourceTree = "<group>"; };
+		04FF333827DC5D080051358C /* MainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHelper.swift; sourceTree = "<group>"; };
+		04FF333A27DC60E40051358C /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		04FF333C27DC635C0051358C /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		04FF333E27DC63B60051358C /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		04FF334127DC67CF0051358C /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		04FF334227DC67CF0051358C /* PostCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCell.xib; sourceTree = "<group>"; };
+		04FF334627DC73B00051358C /* RemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataSource.swift; sourceTree = "<group>"; };
+		04FF334827DC741D0051358C /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		04FF334B27DC74E90051358C /* ApiConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiConfig.swift; sourceTree = "<group>"; };
+		04FF334D27DC758E0051358C /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		04FF335127DC76400051358C /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
+		04FF335327DC769B0051358C /* Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injection.swift; sourceTree = "<group>"; };
+		04FF335527DC81370051358C /* CommentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentModel.swift; sourceTree = "<group>"; };
+		04FF335927DC8BB00051358C /* DetailPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPostViewController.swift; sourceTree = "<group>"; };
+		04FF335A27DC8BB00051358C /* DetailPostViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailPostViewController.xib; sourceTree = "<group>"; };
+		04FF335E27DC8CD30051358C /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		04FF335F27DC8CD30051358C /* CommentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentCell.xib; sourceTree = "<group>"; };
+		04FF336627DC91F40051358C /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		07C39C7489DA1CF3F205D107 /* Pods-NTT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NTT.debug.xcconfig"; path = "Target Support Files/Pods-NTT/Pods-NTT.debug.xcconfig"; sourceTree = "<group>"; };
+		3BF00502C5EFA4B64BAACAA2 /* Pods-NTT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NTT.release.xcconfig"; path = "Target Support Files/Pods-NTT/Pods-NTT.release.xcconfig"; sourceTree = "<group>"; };
+		653B5BFF405DDB72BA84A112 /* Pods-NTT-NTTUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NTT-NTTUITests.release.xcconfig"; path = "Target Support Files/Pods-NTT-NTTUITests/Pods-NTT-NTTUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7D0E119FA3CEA634F992324E /* Pods_NTT_NTTUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NTT_NTTUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		872ABA2A2933B8C477C9733C /* Pods-NTT-NTTUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NTT-NTTUITests.debug.xcconfig"; path = "Target Support Files/Pods-NTT-NTTUITests/Pods-NTT-NTTUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B18CA9E2E874FE8DF24ADBFE /* Pods_NTT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NTT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4D3AC8C5F3BF8BE6EEAA1F1 /* Pods-NTTTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NTTTests.debug.xcconfig"; path = "Target Support Files/Pods-NTTTests/Pods-NTTTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BE70EC92529D5ABF211207C7 /* Pods_NTTTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NTTTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2389B10D0057EC22CC22246 /* Pods_NTT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1ADF30E1AFF584DAD16A6AAE /* Pods_NTTTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +125,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6E33139164545D35CF06CB7 /* Pods_NTT_NTTUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,8 +137,9 @@
 			children = (
 				043154B527DB23870011AD6D /* NTT */,
 				043154CC27DB23880011AD6D /* NTTTests */,
-				043154D727DB23880011AD6D /* NTTUITests */,
 				043154B427DB23870011AD6D /* Products */,
+				D38BE6633957980A2677EF96 /* Pods */,
+				9BB6AF7BF8D8B43900AAD8BE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +156,9 @@
 		043154B527DB23870011AD6D /* NTT */ = {
 			isa = PBXGroup;
 			children = (
-				043154B627DB23870011AD6D /* AppDelegate.swift */,
-				043154B827DB23870011AD6D /* SceneDelegate.swift */,
-				043154BA27DB23870011AD6D /* ViewController.swift */,
-				043154BC27DB23870011AD6D /* Main.storyboard */,
+				04C0E3D727DB2C1200A38A5A /* App */,
+				04C0E3D627DB2C0800A38A5A /* Module */,
+				04C0E3D227DB2BE700A38A5A /* Core */,
 				043154BF27DB23880011AD6D /* Assets.xcassets */,
 				043154C127DB23880011AD6D /* LaunchScreen.storyboard */,
 				043154C427DB23880011AD6D /* Info.plist */,
@@ -119,13 +175,274 @@
 			path = NTTTests;
 			sourceTree = "<group>";
 		};
-		043154D727DB23880011AD6D /* NTTUITests */ = {
+		04C0E3D227DB2BE700A38A5A /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				043154D827DB23880011AD6D /* NTTUITests.swift */,
-				043154DA27DB23880011AD6D /* Info.plist */,
+				04FF334A27DC74DA0051358C /* Utils */,
+				04C0E3D527DB2BFD00A38A5A /* DI */,
+				04C0E3D427DB2BF600A38A5A /* Domain */,
+				04C0E3D327DB2BEF00A38A5A /* Data */,
 			);
-			path = NTTUITests;
+			path = Core;
+			sourceTree = "<group>";
+		};
+		04C0E3D327DB2BEF00A38A5A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				04FF334527DC739F0051358C /* Remote */,
+				04FF334D27DC758E0051358C /* Repository.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		04C0E3D427DB2BF600A38A5A /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				04FF335027DC762F0051358C /* Usecase */,
+				04FF334F27DC76270051358C /* Model */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		04C0E3D527DB2BFD00A38A5A /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				04FF335327DC769B0051358C /* Injection.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		04C0E3D627DB2C0800A38A5A /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				04FF335727DC8B8E0051358C /* DetailPost */,
+				04C0E3E927DB42DE00A38A5A /* MainTabbar */,
+				04C0E3E427DB421600A38A5A /* Profile */,
+				04C0E3DB27DB3DEE00A38A5A /* Login */,
+				04C0E3D827DB3A9100A38A5A /* Home */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		04C0E3D727DB2C1200A38A5A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				04FF336527DC91E60051358C /* Extension */,
+				04C0E3EC27DB438100A38A5A /* Helper */,
+				043154B627DB23870011AD6D /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		04C0E3D827DB3A9100A38A5A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				04FF334027DC679D0051358C /* Cell */,
+				04C0E3DA27DB3AA300A38A5A /* View */,
+				04C0E3D927DB3A9B00A38A5A /* Presenter */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		04C0E3D927DB3A9B00A38A5A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				04C0E3E227DB3E9F00A38A5A /* HomePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		04C0E3DA27DB3AA300A38A5A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				043154BA27DB23870011AD6D /* HomeViewController.swift */,
+				04FF333E27DC63B60051358C /* HomeViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04C0E3DB27DB3DEE00A38A5A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				04C0E3DD27DB3E0500A38A5A /* View */,
+				04C0E3DC27DB3DF600A38A5A /* Presenter */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		04C0E3DC27DB3DF600A38A5A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				04C0E3E027DB3E5700A38A5A /* LoginPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		04C0E3DD27DB3E0500A38A5A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04C0E3DE27DB3E3000A38A5A /* LoginViewController.swift */,
+				04FF333A27DC60E40051358C /* LoginViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04C0E3E427DB421600A38A5A /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				04C0E3E627DB422800A38A5A /* View */,
+				04C0E3E527DB421D00A38A5A /* Presenter */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		04C0E3E527DB421D00A38A5A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		04C0E3E627DB422800A38A5A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04C0E3E727DB423800A38A5A /* ProfileViewController.swift */,
+				04FF333C27DC635C0051358C /* ProfileViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04C0E3E927DB42DE00A38A5A /* MainTabbar */ = {
+			isa = PBXGroup;
+			children = (
+				04C0E3EA27DB432600A38A5A /* MainTabbarController.swift */,
+			);
+			path = MainTabbar;
+			sourceTree = "<group>";
+		};
+		04C0E3EC27DB438100A38A5A /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				04FF333727DC5CFA0051358C /* MainHelper */,
+				04C0E3ED27DB43B600A38A5A /* Navigation */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		04C0E3ED27DB43B600A38A5A /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				04C0E3EE27DB43D900A38A5A /* NavigationManager.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		04FF333727DC5CFA0051358C /* MainHelper */ = {
+			isa = PBXGroup;
+			children = (
+				04FF333827DC5D080051358C /* MainHelper.swift */,
+			);
+			path = MainHelper;
+			sourceTree = "<group>";
+		};
+		04FF334027DC679D0051358C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				04FF334127DC67CF0051358C /* PostCell.swift */,
+				04FF334227DC67CF0051358C /* PostCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		04FF334527DC739F0051358C /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				04FF334627DC73B00051358C /* RemoteDataSource.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		04FF334A27DC74DA0051358C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				04FF334B27DC74E90051358C /* ApiConfig.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		04FF334F27DC76270051358C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04FF334827DC741D0051358C /* PostModel.swift */,
+				04FF335527DC81370051358C /* CommentModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04FF335027DC762F0051358C /* Usecase */ = {
+			isa = PBXGroup;
+			children = (
+				04FF335127DC76400051358C /* Interactor.swift */,
+			);
+			path = Usecase;
+			sourceTree = "<group>";
+		};
+		04FF335727DC8B8E0051358C /* DetailPost */ = {
+			isa = PBXGroup;
+			children = (
+				04FF335D27DC8CC10051358C /* Cell */,
+				04FF335827DC8B9A0051358C /* View */,
+			);
+			path = DetailPost;
+			sourceTree = "<group>";
+		};
+		04FF335827DC8B9A0051358C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04FF335927DC8BB00051358C /* DetailPostViewController.swift */,
+				04FF335A27DC8BB00051358C /* DetailPostViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04FF335D27DC8CC10051358C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				04FF335E27DC8CD30051358C /* CommentCell.swift */,
+				04FF335F27DC8CD30051358C /* CommentCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		04FF336527DC91E60051358C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				04FF336627DC91F40051358C /* UIView+Ext.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		9BB6AF7BF8D8B43900AAD8BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B18CA9E2E874FE8DF24ADBFE /* Pods_NTT.framework */,
+				7D0E119FA3CEA634F992324E /* Pods_NTT_NTTUITests.framework */,
+				BE70EC92529D5ABF211207C7 /* Pods_NTTTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D38BE6633957980A2677EF96 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				07C39C7489DA1CF3F205D107 /* Pods-NTT.debug.xcconfig */,
+				3BF00502C5EFA4B64BAACAA2 /* Pods-NTT.release.xcconfig */,
+				872ABA2A2933B8C477C9733C /* Pods-NTT-NTTUITests.debug.xcconfig */,
+				653B5BFF405DDB72BA84A112 /* Pods-NTT-NTTUITests.release.xcconfig */,
+				B4D3AC8C5F3BF8BE6EEAA1F1 /* Pods-NTTTests.debug.xcconfig */,
+				03DA260309951FECDBE3B6DC /* Pods-NTTTests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,9 +452,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 043154DD27DB23880011AD6D /* Build configuration list for PBXNativeTarget "NTT" */;
 			buildPhases = (
+				28BBBF31F2949417CCD502B0 /* [CP] Check Pods Manifest.lock */,
 				043154AF27DB23870011AD6D /* Sources */,
 				043154B027DB23870011AD6D /* Frameworks */,
 				043154B127DB23870011AD6D /* Resources */,
+				DEE8CB31702774CEBB988181 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +471,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 043154E027DB23880011AD6D /* Build configuration list for PBXNativeTarget "NTTTests" */;
 			buildPhases = (
+				C87F46AFE88ACCAB315B2FBE /* [CP] Check Pods Manifest.lock */,
 				043154C527DB23880011AD6D /* Sources */,
 				043154C627DB23880011AD6D /* Frameworks */,
 				043154C727DB23880011AD6D /* Resources */,
@@ -170,9 +490,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 043154E327DB23880011AD6D /* Build configuration list for PBXNativeTarget "NTTUITests" */;
 			buildPhases = (
+				C1F0BADD6F3D938F25043541 /* [CP] Check Pods Manifest.lock */,
 				043154D027DB23880011AD6D /* Sources */,
 				043154D127DB23880011AD6D /* Frameworks */,
 				043154D227DB23880011AD6D /* Resources */,
+				E2FDBF0AF3AAB04CDD421203 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -231,9 +553,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04FF333B27DC60E40051358C /* LoginViewController.xib in Resources */,
+				04FF334427DC67CF0051358C /* PostCell.xib in Resources */,
 				043154C327DB23880011AD6D /* LaunchScreen.storyboard in Resources */,
+				04FF336127DC8CD30051358C /* CommentCell.xib in Resources */,
+				04FF333F27DC63B60051358C /* HomeViewController.xib in Resources */,
+				04FF335C27DC8BB00051358C /* DetailPostViewController.xib in Resources */,
+				04FF333D27DC635C0051358C /* ProfileViewController.xib in Resources */,
 				043154C027DB23880011AD6D /* Assets.xcassets in Resources */,
-				043154BE27DB23870011AD6D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,14 +580,134 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		28BBBF31F2949417CCD502B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NTT-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1F0BADD6F3D938F25043541 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NTT-NTTUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C87F46AFE88ACCAB315B2FBE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NTTTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEE8CB31702774CEBB988181 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NTT/Pods-NTT-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NTT/Pods-NTT-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NTT/Pods-NTT-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2FDBF0AF3AAB04CDD421203 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NTT-NTTUITests/Pods-NTT-NTTUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NTT-NTTUITests/Pods-NTT-NTTUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NTT-NTTUITests/Pods-NTT-NTTUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		043154AF27DB23870011AD6D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				043154BB27DB23870011AD6D /* ViewController.swift in Sources */,
+				04FF336027DC8CD30051358C /* CommentCell.swift in Sources */,
+				04FF333927DC5D080051358C /* MainHelper.swift in Sources */,
+				04FF334927DC741D0051358C /* PostModel.swift in Sources */,
+				04C0E3DF27DB3E3000A38A5A /* LoginViewController.swift in Sources */,
+				04FF334727DC73B00051358C /* RemoteDataSource.swift in Sources */,
+				043154BB27DB23870011AD6D /* HomeViewController.swift in Sources */,
+				04FF335B27DC8BB00051358C /* DetailPostViewController.swift in Sources */,
+				04C0E3EF27DB43D900A38A5A /* NavigationManager.swift in Sources */,
+				04C0E3EB27DB432600A38A5A /* MainTabbarController.swift in Sources */,
+				04FF334E27DC758E0051358C /* Repository.swift in Sources */,
+				04FF334C27DC74E90051358C /* ApiConfig.swift in Sources */,
 				043154B727DB23870011AD6D /* AppDelegate.swift in Sources */,
-				043154B927DB23870011AD6D /* SceneDelegate.swift in Sources */,
+				04FF336727DC91F50051358C /* UIView+Ext.swift in Sources */,
+				04FF335627DC81370051358C /* CommentModel.swift in Sources */,
+				04C0E3E327DB3E9F00A38A5A /* HomePresenter.swift in Sources */,
+				04C0E3E827DB423800A38A5A /* ProfileViewController.swift in Sources */,
+				04FF335227DC76400051358C /* Interactor.swift in Sources */,
+				04FF335427DC769B0051358C /* Injection.swift in Sources */,
+				04C0E3E127DB3E5700A38A5A /* LoginPresenter.swift in Sources */,
+				04FF334327DC67CF0051358C /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +723,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				043154D927DB23880011AD6D /* NTTUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +742,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		043154BC27DB23870011AD6D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				043154BD27DB23870011AD6D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		043154C127DB23880011AD6D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -433,12 +871,14 @@
 		};
 		043154DE27DB23880011AD6D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07C39C7489DA1CF3F205D107 /* Pods-NTT.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W59APR6U5A;
 				INFOPLIST_FILE = NTT/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,12 +892,14 @@
 		};
 		043154DF27DB23880011AD6D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BF00502C5EFA4B64BAACAA2 /* Pods-NTT.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W59APR6U5A;
 				INFOPLIST_FILE = NTT/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -471,6 +913,7 @@
 		};
 		043154E127DB23880011AD6D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4D3AC8C5F3BF8BE6EEAA1F1 /* Pods-NTTTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +936,7 @@
 		};
 		043154E227DB23880011AD6D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03DA260309951FECDBE3B6DC /* Pods-NTTTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +959,7 @@
 		};
 		043154E427DB23880011AD6D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 872ABA2A2933B8C477C9733C /* Pods-NTT-NTTUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +980,7 @@
 		};
 		043154E527DB23880011AD6D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 653B5BFF405DDB72BA84A112 /* Pods-NTT-NTTUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
