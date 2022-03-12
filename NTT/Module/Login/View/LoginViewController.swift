@@ -20,7 +20,10 @@ class LoginViewController: UIViewController {
     }
     @IBAction func login(_ sender: UIButton) {
         
-        presenter.login()
+        let username = TFUsername.text!
+        let password = TFPassword.text!
+        
+        presenter.login(userName: username, password: password)
     }
     
 }

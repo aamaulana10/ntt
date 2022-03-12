@@ -12,6 +12,7 @@ protocol UseCase {
     
     func getPost() -> AnyPublisher<[PostModel], Error>
     func getComment(postId: Int) -> AnyPublisher<[CommentModel], Error>
+    func getUserbyUsername(username: String) -> AnyPublisher<UserModel, Error>
 }
 
 class Interactor: UseCase {
@@ -29,5 +30,9 @@ class Interactor: UseCase {
     
     func getComment(postId: Int) -> AnyPublisher<[CommentModel], Error> {
         return repository.getComment(postId: postId)
+    }
+    
+    func getUserbyUsername(username: String) -> AnyPublisher<UserModel, Error> {
+        return repository.getUserbyUsername(username: username)
     }
 }

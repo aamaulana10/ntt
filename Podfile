@@ -9,6 +9,7 @@ target 'NTT' do
    pod 'Alamofire', '~> 5.5'
    pod 'SwiftyJSON', '~> 4.0'
    pod 'SDWebImage', '~> 5.0'
+   pod 'SwiftMessages'
 
   target 'NTTTests' do
     inherit! :search_paths

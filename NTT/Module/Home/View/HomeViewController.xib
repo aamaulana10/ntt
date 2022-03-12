@@ -13,6 +13,7 @@
             <connections>
                 <outlet property="activityIndicator" destination="b3Y-Dn-aaO" id="iKi-kb-mDY"/>
                 <outlet property="homeTableView" destination="mVf-TZ-MSM" id="Pai-cm-fwc"/>
+                <outlet property="homeTitle" destination="KO7-7h-oLN" id="Fuw-Ca-GB0"/>
                 <outlet property="view" destination="iN0-l3-epB" id="r6K-fe-TkL"/>
             </connections>
         </placeholder>
@@ -22,7 +23,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mVf-TZ-MSM">
-                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <rect key="frame" x="0.0" y="137" width="414" height="725"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                 </tableView>
@@ -30,16 +31,25 @@
                     <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
                     <color key="color" systemColor="linkColor"/>
                 </activityIndicatorView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Post List" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KO7-7h-oLN">
+                    <rect key="frame" x="16" y="76" width="382" height="29"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="b3Y-Dn-aaO" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="3Rz-Z3-3mr"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="mVf-TZ-MSM" secondAttribute="bottom" id="4J8-rU-wYN"/>
-                <constraint firstItem="mVf-TZ-MSM" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="BKv-Mb-Uy2"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="mVf-TZ-MSM" secondAttribute="trailing" id="CLt-Zp-tsM"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="KO7-7h-oLN" secondAttribute="trailing" constant="16" id="K3N-fE-QNR"/>
+                <constraint firstItem="KO7-7h-oLN" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="Me4-a6-LgT"/>
                 <constraint firstItem="b3Y-Dn-aaO" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="aPg-zI-s1w"/>
                 <constraint firstItem="mVf-TZ-MSM" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="c37-uo-UM8"/>
+                <constraint firstItem="mVf-TZ-MSM" firstAttribute="top" secondItem="KO7-7h-oLN" secondAttribute="bottom" constant="32" id="piU-fl-SOf"/>
+                <constraint firstItem="KO7-7h-oLN" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="32" id="syf-A4-boe"/>
             </constraints>
             <point key="canvasLocation" x="35" y="72"/>
         </view>

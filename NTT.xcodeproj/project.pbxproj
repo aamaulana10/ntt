@@ -36,6 +36,10 @@
 		04FF336027DC8CD30051358C /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FF335E27DC8CD30051358C /* CommentCell.swift */; };
 		04FF336127DC8CD30051358C /* CommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04FF335F27DC8CD30051358C /* CommentCell.xib */; };
 		04FF336727DC91F50051358C /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FF336627DC91F40051358C /* UIView+Ext.swift */; };
+		04FF336927DC965E0051358C /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FF336827DC965E0051358C /* UserModel.swift */; };
+		04FF336C27DC99500051358C /* PreferenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FF336B27DC99500051358C /* PreferenceManager.swift */; };
+		04FF337127DC9F930051358C /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FF337027DC9F930051358C /* ProfilePresenter.swift */; };
+		04FF337327DCA0F10051358C /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FF337227DCA0F10051358C /* AlertHelper.swift */; };
 		1ADF30E1AFF584DAD16A6AAE /* Pods_NTTTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE70EC92529D5ABF211207C7 /* Pods_NTTTests.framework */; };
 		A2389B10D0057EC22CC22246 /* Pods_NTT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18CA9E2E874FE8DF24ADBFE /* Pods_NTT.framework */; };
 		E6E33139164545D35CF06CB7 /* Pods_NTT_NTTUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D0E119FA3CEA634F992324E /* Pods_NTT_NTTUITests.framework */; };
@@ -94,6 +98,10 @@
 		04FF335E27DC8CD30051358C /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		04FF335F27DC8CD30051358C /* CommentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentCell.xib; sourceTree = "<group>"; };
 		04FF336627DC91F40051358C /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		04FF336827DC965E0051358C /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		04FF336B27DC99500051358C /* PreferenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceManager.swift; sourceTree = "<group>"; };
+		04FF337027DC9F930051358C /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
+		04FF337227DCA0F10051358C /* AlertHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
 		07C39C7489DA1CF3F205D107 /* Pods-NTT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NTT.debug.xcconfig"; path = "Target Support Files/Pods-NTT/Pods-NTT.debug.xcconfig"; sourceTree = "<group>"; };
 		3BF00502C5EFA4B64BAACAA2 /* Pods-NTT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NTT.release.xcconfig"; path = "Target Support Files/Pods-NTT/Pods-NTT.release.xcconfig"; sourceTree = "<group>"; };
 		653B5BFF405DDB72BA84A112 /* Pods-NTT-NTTUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NTT-NTTUITests.release.xcconfig"; path = "Target Support Files/Pods-NTT-NTTUITests/Pods-NTT-NTTUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -290,6 +298,7 @@
 		04C0E3E427DB421600A38A5A /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				04FF336D27DC9F6B0051358C /* Presenter */,
 				04C0E3E627DB422800A38A5A /* View */,
 				04C0E3E527DB421D00A38A5A /* Presenter */,
 			);
@@ -323,6 +332,7 @@
 		04C0E3EC27DB438100A38A5A /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				04FF336A27DC99390051358C /* PreferenceManager */,
 				04FF333727DC5CFA0051358C /* MainHelper */,
 				04C0E3ED27DB43B600A38A5A /* Navigation */,
 			);
@@ -341,6 +351,7 @@
 			isa = PBXGroup;
 			children = (
 				04FF333827DC5D080051358C /* MainHelper.swift */,
+				04FF337227DCA0F10051358C /* AlertHelper.swift */,
 			);
 			path = MainHelper;
 			sourceTree = "<group>";
@@ -375,6 +386,7 @@
 			children = (
 				04FF334827DC741D0051358C /* PostModel.swift */,
 				04FF335527DC81370051358C /* CommentModel.swift */,
+				04FF336827DC965E0051358C /* UserModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -420,6 +432,22 @@
 				04FF336627DC91F40051358C /* UIView+Ext.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		04FF336A27DC99390051358C /* PreferenceManager */ = {
+			isa = PBXGroup;
+			children = (
+				04FF336B27DC99500051358C /* PreferenceManager.swift */,
+			);
+			path = PreferenceManager;
+			sourceTree = "<group>";
+		};
+		04FF336D27DC9F6B0051358C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				04FF337027DC9F930051358C /* ProfilePresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		9BB6AF7BF8D8B43900AAD8BE /* Frameworks */ = {
@@ -689,6 +717,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				04FF336027DC8CD30051358C /* CommentCell.swift in Sources */,
+				04FF337127DC9F930051358C /* ProfilePresenter.swift in Sources */,
+				04FF336927DC965E0051358C /* UserModel.swift in Sources */,
 				04FF333927DC5D080051358C /* MainHelper.swift in Sources */,
 				04FF334927DC741D0051358C /* PostModel.swift in Sources */,
 				04C0E3DF27DB3E3000A38A5A /* LoginViewController.swift in Sources */,
@@ -698,11 +728,13 @@
 				04C0E3EF27DB43D900A38A5A /* NavigationManager.swift in Sources */,
 				04C0E3EB27DB432600A38A5A /* MainTabbarController.swift in Sources */,
 				04FF334E27DC758E0051358C /* Repository.swift in Sources */,
+				04FF337327DCA0F10051358C /* AlertHelper.swift in Sources */,
 				04FF334C27DC74E90051358C /* ApiConfig.swift in Sources */,
 				043154B727DB23870011AD6D /* AppDelegate.swift in Sources */,
 				04FF336727DC91F50051358C /* UIView+Ext.swift in Sources */,
 				04FF335627DC81370051358C /* CommentModel.swift in Sources */,
 				04C0E3E327DB3E9F00A38A5A /* HomePresenter.swift in Sources */,
+				04FF336C27DC99500051358C /* PreferenceManager.swift in Sources */,
 				04C0E3E827DB423800A38A5A /* ProfileViewController.swift in Sources */,
 				04FF335227DC76400051358C /* Interactor.swift in Sources */,
 				04FF335427DC769B0051358C /* Injection.swift in Sources */,

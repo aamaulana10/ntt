@@ -12,6 +12,7 @@ protocol RepositoryProtocol {
     
     func getPost() -> AnyPublisher<[PostModel], Error>
     func getComment(postId: Int) -> AnyPublisher<[CommentModel], Error>
+    func getUserbyUsername(username: String) -> AnyPublisher<UserModel, Error>
 }
 
 final class Repository: NSObject {
@@ -40,6 +41,11 @@ extension Repository: RepositoryProtocol {
     func getComment(postId: Int) -> AnyPublisher<[CommentModel], Error> {
         
         return remote.getComment(postId: postId)
+    }
+    
+    func getUserbyUsername(username: String) -> AnyPublisher<UserModel, Error> {
+        
+        return remote.getUserbyUsername(username: username)
     }
     
 }

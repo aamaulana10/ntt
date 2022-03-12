@@ -24,7 +24,14 @@ class DetailPostViewController: UIViewController {
         setupData()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
+        self.navigationController?.isNavigationBarHidden = false
+    }
     func setupView() {
+        
+        self.title = "Detail Post"
         
         commentTable.delegate = self
         commentTable.dataSource = self

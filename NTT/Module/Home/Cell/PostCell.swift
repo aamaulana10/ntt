@@ -21,7 +21,7 @@ class PostCell: UITableViewCell {
     
     func setupData(data: PostModel) {
         
-        lblTitle.text = data.title + "\(data.id)"
+        lblTitle.text = data.title + "\(data.userId)"
         lblPost.text = data.body
         lblCommentCount.text = "\(data.comment?.count ?? 0)"
         

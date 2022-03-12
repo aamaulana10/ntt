@@ -13,6 +13,7 @@ protocol RemoteDataSourceProtocol {
     
     func getPost() -> AnyPublisher<[PostModel], Error>
     func getComment(postId: Int) -> AnyPublisher<[CommentModel], Error>
+    func getUserbyUsername(username: String) -> AnyPublisher<UserModel, Error>
 }
 
 final class RemoteDataSource: NSObject {
@@ -55,6 +56,41 @@ extension RemoteDataSource: RemoteDataSourceProtocol {
                         switch response.result {
                         case .success(let value):
                             completion(.success(value))
+                        case .failure(let error):
+                            completion(.failure(error))
+                        }
+                    }
+            }
+        }.eraseToAnyPublisher()
+    }
+    
+    func getUserbyUsername(username: String) -> AnyPublisher<UserModel, Error> {
+        
+        return Future<UserModel, Error> { completion in
+            if let url = URL(string: API.getUser) {
+                AF.request(url)
+                    .validate()
+                    .responseDecodable(of: [UserModel].self) { response in
+                        
+                        switch response.result {
+                        case .success(let value):
+                            
+                            let user = value.first { userModel in
+                                
+                                userModel.username.lowercased() == username.lowercased()
+                            }
+                            
+                            if let user = user {
+                                
+                                completion(.success(user))
+                                
+                            } else {
+                                
+                                let error = NSError(domain: "Error", code: 403, userInfo: [NSLocalizedDescriptionKey: "User not found"])
+                                
+                                completion(.failure(error))
+                            }
+                            
                         case .failure(let error):
                             completion(.failure(error))
                         }

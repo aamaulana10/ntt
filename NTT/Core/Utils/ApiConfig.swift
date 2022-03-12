@@ -12,6 +12,7 @@ class API {
     static let baseUrl  = "https://jsonplaceholder.typicode.com/"
     
     static let getPost  = "\(API.baseUrl)posts"
+    static let getUser  = "\(API.baseUrl)users"
     static func getComment(postId: Int) -> String {
         return "\(API.baseUrl)posts/\(postId)/comments"
     }

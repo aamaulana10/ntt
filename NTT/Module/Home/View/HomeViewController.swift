@@ -11,6 +11,7 @@ class HomeViewController: UIViewController {
 
     @IBOutlet weak var homeTableView: UITableView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var homeTitle: UILabel!
     var offset = 20
     
     let presenter = HomePresenter()
@@ -24,13 +25,26 @@ class HomeViewController: UIViewController {
         getDataByOffset(offset: offset)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
+        self.navigationController?.isNavigationBarHidden = true
+    }
+    
     func setupView() {
+        
+        presenter.getUser { user in
+            
+            self.homeTitle.text = "Post by \(user.username)"
+        }
         
         homeTableView.delegate = self
         homeTableView.dataSource = self
         homeTableView.register(UINib.init(nibName: "PostCell", bundle: nil), forCellReuseIdentifier: "PostCell")
         
         activityIndicator.hidesWhenStopped = true
+        
+        
     }
     
     func getDataByOffset(offset: Int) {

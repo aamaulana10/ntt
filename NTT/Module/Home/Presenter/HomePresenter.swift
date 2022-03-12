@@ -10,8 +10,10 @@ import Combine
 
 class HomePresenter {
     
+    private let router = NavigationManager.instance
     private let useCase = Injection().provideUsecase()
     private var cancellables: Set<AnyCancellable> = []
+    private let prefs = PreferenceManager.instance
     
     func getPost(offset: Int, completion: @escaping([PostModel]) -> ()) {
         
@@ -45,7 +47,16 @@ class HomePresenter {
                     
                     print(postDataAfterComment)
                     
-                    completion(postDataAfterComment)
+                    if let userId = self.prefs.userData?.id {
+                        
+                        postDataAfterComment = postDataAfterComment.filter { filterData in
+                            
+                            filterData.userId == userId
+                        }
+                        
+                        completion(postDataAfterComment)
+                    }
+                    
                 }
             }
             
@@ -100,6 +111,15 @@ class HomePresenter {
         let vc = DetailPostViewController()
         vc.dataPost = postData
         
-        NavigationManager.instance.pushToVc(vc: vc)
+        router.pushToVc(vc: vc)
     }
+    
+    func getUser(completion: @escaping(UserModel) -> ()) {
+        
+        if let user = prefs.userData {
+            
+            completion(user)
+        }
+    }
+    
 }
